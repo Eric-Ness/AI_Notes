@@ -37,6 +37,7 @@ Without Git, Claude Code is helpful. With Git, Claude Code becomes a full develo
 |-------|----------------|
 | [GitHub CLI Setup](github-cli-setup.md) | Connect Claude Code to GitHub |
 | [Issues & Todos](issues-and-todos.md) | Task tracking with GitHub Issues |
+| [Workflows](workflows.md) | Branching, PRs, and code review with Claude |
 | [Reverting Changes](reverting-changes.md) | How to undo mistakes |
 | [Core Commands](core-commands.md) | Essential Git commands reference |
 

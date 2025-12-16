@@ -14,9 +14,8 @@ A practical guide to prompt engineering, Claude Code, and GitHub workflows. Writ
 | Section | Description |
 |---------|-------------|
 | [Prompt Engineering](docs/prompt-engineering/) | How to communicate effectively with AI |
-| [GitHub Basics](docs/github-basics/) | Git and GitHub from scratch |
+| [GitHub Basics](docs/github-basics/) | Git, GitHub, and AI-assisted workflows |
 | [Claude Code](docs/claude-code/) | Master the Claude Code CLI |
-| [GitHub Integration](docs/github-integration/) | AI-assisted Git workflows |
 | [Advanced Topics](docs/advanced/) | Power user techniques |
 
 ## Where to Start
