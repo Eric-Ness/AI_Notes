@@ -17,6 +17,7 @@ A practical guide to prompt engineering, Claude Code, and GitHub workflows. Writ
 | [GitHub Basics](docs/github-basics/) | Git, GitHub, and AI-assisted workflows |
 | [Claude Code](docs/claude-code/) | Master the Claude Code CLI |
 | [Advanced Topics](docs/advanced/) | Power user techniques |
+| [Required Watching](docs/videos.md) | Curated video resources |
 
 ## Where to Start
 
