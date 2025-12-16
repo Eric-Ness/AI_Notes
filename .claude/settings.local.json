@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(create-plans)",
+      "Bash(git init:*)",
+      "Bash(mkdir:*)"
+    ]
+  }
+}
