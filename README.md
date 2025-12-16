@@ -27,6 +27,12 @@ A practical guide to prompt engineering, Claude Code, and GitHub workflows. Writ
 
 **Never used Git?** [GitHub Basics](docs/github-basics/) will get you up to speed.
 
+## Eric's Quick Guide
+
+1. [My Prompt Examples](docs/prompt-engineering/mypromptexamples.md) My examples / Quick Guide
+2. [Required Watching](docs/videos.md) - 3~4 videos that are worth your time
+3. [Skills](docs/advanced/skills.md) It is worth your time to learn how to use skills
+
 ## About
 
 This is a living document. Content is added and updated as I learn new things and get feedback. Feel free to browse, share, and reach out with questions.
