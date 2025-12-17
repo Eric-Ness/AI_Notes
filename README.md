@@ -32,7 +32,7 @@ A practical guide to prompt engineering, Claude Code, and GitHub workflows. Writ
 1. [My Prompt Examples](docs/prompt-engineering/mypromptexamples.md) My examples / Quick Guide
 2. [Required Watching](docs/videos.md) - 3~4 videos that are worth your time
 3. [Skills](docs/advanced/skills.md) It is worth your time to learn how to use skills
-4. [Community Resources](docs/advanced/community_resources.md) - Some plugins and resources you should check out
+4. [Community Resources](docs/advanced/community-resources.md) - Some plugins and resources you should check out
 
 ## About
 
