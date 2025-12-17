@@ -198,3 +198,36 @@ Give me a detailed report on the following data. Imagine you are the lead scient
 
 As this is an environmental report it is EXTREMELY IMPORTANT that you double check your work and figures.
 ```
+
+### Iterative Feature Development Workflow
+
+Use this prompt when starting a new feature to ensure proper tracking and a clean PR-based workflow. It also will help provide a history that you can refer back to.
+
+```markdown
+I have the following feature that I want to implement:
+
+DESCRIBE FEATURE
+
+Before starting:
+1. Ask any clarifying questions
+2. Review relevant existing code to understand the current state
+
+Then:
+1. Add to todo list and roadmap
+2. Create a GitHub issue with acceptance criteria
+3. Create a feature branch and open a draft PR
+4. Start implementation
+
+Additional considerations:
+- Is this a single PR or should it be broken into smaller pieces?
+- What does "done" look like for this feature?
+```
+
+**Why this works:**
+
+- **Questions first** - Prevents Claude from diving in with wrong assumptions
+- **Context gathering** - Reviews existing code before making changes
+- **Full tracking** - Todo list, roadmap, and GitHub issue create visibility
+- **PR-first approach** - Changes are on a branch, reviewable, not directly on main
+- **Scope check** - Catches features that should be multiple PRs
+- **Acceptance criteria** - Defines when to stop
