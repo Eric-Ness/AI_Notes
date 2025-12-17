@@ -139,6 +139,61 @@ The value compounds over time—weeks of use builds significant institutional kn
 
 ---
 
+### Get Shit Done (GSD)
+
+**What it is**: A meta-prompting and context engineering system for Claude Code that automates project planning and execution.
+
+**GitHub**: [get-shit-done](https://github.com/glittercowboy/get-shit-done)
+
+**Why it's valuable**: Also from Tash (creator of TÂCHES), GSD addresses the core problem with "vibe coding" - inconsistent results that fall apart at scale. It provides structured context and methodical task breakdown.
+
+#### GSD: The Problem It Solves
+
+> "Vibecoding has a bad reputation. You describe what you want, AI generates code, and you get inconsistent garbage that falls apart at scale."
+
+GSD prevents quality degradation by:
+
+- Breaking work into atomic tasks
+- Running each task in a fresh 200k-token context (no accumulated confusion)
+- Maintaining persistent state tracking across sessions
+
+#### GSD: How It Works
+
+**Workflow Structure**:
+
+1. **Project extraction** - Guided questioning creates PROJECT.md
+2. **Ecosystem research** - Optional deep-dive for complex domains
+3. **Roadmap creation** - Phase-based planning
+4. **Atomic task execution** - Fresh subagent contexts per task
+5. **Modular iteration** - Support for MVPs and feature additions
+
+**Key Features**:
+
+- XML-formatted prompts optimized for Claude
+- Persistent state tracking (STATE.md)
+- Clean Git history with documented summaries
+- Deferred issue management
+- 18+ commands for the complete development lifecycle
+
+#### GSD: Installation
+
+```bash
+npx get-shit-done-cc
+```
+
+#### When to Use GSD vs TÂCHES
+
+| Use Case | Recommendation |
+|----------|----------------|
+| Individual skills/commands | TÂCHES |
+| Full project lifecycle automation | GSD |
+| Learning how skills work | TÂCHES |
+| Shipping complete projects | GSD |
+
+Both are from the same creator and share the same philosophy - they complement each other.
+
+---
+
 ## Other Notable Resources
 
 ### Domain Expertise Collections
