@@ -201,7 +201,7 @@ As this is an environmental report it is EXTREMELY IMPORTANT that you double che
 
 ### Iterative Feature Development Workflow
 
-Use this prompt when starting a new feature to ensure proper tracking and a clean PR-based workflow.
+Use this prompt when starting a new feature to ensure proper tracking and a clean PR-based workflow. It also will help provide a history that you can refer back to.
 
 ```markdown
 I have the following feature that I want to implement:
