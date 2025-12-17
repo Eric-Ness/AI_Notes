@@ -162,10 +162,16 @@ The server provides a `sequentialthinking` tool that enables:
 
 #### Sequential Thinking: Installation
 
-**Claude Code**:
+**Claude Code** (simple):
 
 ```bash
 claude mcp add sequential-thinking -- npx -y @anthropic/mcp-server-sequential-thinking
+```
+
+**Claude Code** (JSON format):
+
+```bash
+claude mcp add-json "sequential-thinking" '{"command":"npx","args":["-y","@modelcontextprotocol/server-sequential-thinking"]}'
 ```
 
 **Claude Desktop** (add to config):
@@ -181,10 +187,38 @@ claude mcp add sequential-thinking -- npx -y @anthropic/mcp-server-sequential-th
 }
 ```
 
-**Docker**:
+#### Sequential Thinking: From Source
+
+Clone and run the server directly:
 
 ```bash
-docker run -p 8080:8080 mcp/sequentialthinking
+git clone https://github.com/camilovelezr/server-sequential-thinking.git
+cd server-sequential-thinking
+npm install
+```
+
+Start the server (uses Streamable HTTP transport on port 3000):
+
+```bash
+npm start
+```
+
+Change the port with the `PORT` environment variable:
+
+```bash
+PORT=8080 npm start
+```
+
+#### Sequential Thinking: Docker
+
+Build and run in a containerized environment:
+
+```bash
+# Build the image
+docker build -t mcp-server-sequential-thinking .
+
+# Run the container
+docker run -p 3000:3000 mcp-server-sequential-thinking
 ```
 
 #### When to Use It
