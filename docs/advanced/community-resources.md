@@ -76,69 +76,6 @@ Or manually clone and copy to your skills/commands directories.
 
 ---
 
-### Emergent Learning Framework (ELF)
-
-**What it is**: A system that enables Claude Code to learn from experience across sessions.
-
-**GitHub**: https://github.com/Spacehunterz/Emergent-Learning-Framework_ELF
-
-**Why it's valuable**: ELF solves the "Claude forgets everything" problem. It creates persistent memory that survives between sessions.
-
-#### The Problem It Solves
-
-Every Claude Code session starts fresh. Yesterday's lessons, patterns, and context are gone. You end up:
-- Re-explaining project conventions
-- Repeating what didn't work
-- Losing institutional knowledge
-
-ELF changes this by recording outcomes and building knowledge over time.
-
-#### How It Works
-
-**Persistent Learning**:
-- Records successes and failures to local SQLite database
-- Patterns strengthen through repeated validation
-- Confidence scores (0.0 to 1.0) track reliability
-
-**Knowledge Progression**:
-```
-Observations → Heuristics → Golden Rules
-(raw data)    (tested)     (high confidence)
-```
-
-**Hotspot Analysis**:
-- Tracks which files you touch most (pheromone trails)
-- Visualizes development focus areas
-- Helps understand project evolution
-
-**Dashboard**:
-- Local web interface (localhost:3001)
-- Session history and analytics
-- Knowledge graphs
-- Natural language search across previous work
-
-#### Multi-Agent Coordination
-
-On Pro/Max plans, ELF supports coordinated agent swarms:
-- **Researcher**: Gathers information
-- **Architect**: Designs solutions
-- **Skeptic**: Challenges assumptions
-- **Creative**: Explores alternatives
-
-These agents work together, with learnings shared across the system.
-
-#### Getting Started
-
-```
-check in
-```
-
-This triggers auto-setup. No API keys needed beyond Claude Code itself.
-
-The value compounds over time—weeks of use builds significant institutional knowledge.
-
----
-
 ### Get Shit Done (GSD)
 
 **What it is**: A meta-prompting and context engineering system for Claude Code that automates project planning and execution.
@@ -191,6 +128,74 @@ npx get-shit-done-cc
 | Shipping complete projects | GSD |
 
 Both are from the same creator and share the same philosophy - they complement each other.
+
+---
+
+### Sequential Thinking MCP Server
+
+**What it is**: An MCP server that enables structured, step-by-step reasoning for complex problems.
+
+**Resources**:
+
+- [Official GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
+- [MCP Servers Directory](https://mcpservers.org/servers/camilovelezr/server-sequential-thinking)
+- [Playbooks Guide](https://playbooks.com/mcp/anthropic-sequential-thinking)
+
+**Why it's valuable**: Instead of trying to solve complex problems all at once, Sequential Thinking breaks them down into manageable steps with the ability to revise, branch, and course-correct as understanding evolves.
+
+#### What It Does
+
+The server provides a `sequentialthinking` tool that enables:
+
+- **Dynamic problem decomposition** - Break complex challenges into smaller steps
+- **Revision capability** - Reconsider and update earlier conclusions as you learn more
+- **Branching logic** - Explore alternative approaches when needed
+- **Flexible depth** - Adjust the number of thinking steps as the problem requires
+- **Context preservation** - Maintain coherence across extended reasoning chains
+
+#### Best For
+
+- Complex multi-step analysis
+- Planning tasks that may need revision
+- Problems with unclear scope
+- Tasks requiring context across many thinking steps
+
+#### Sequential Thinking: Installation
+
+**Claude Code**:
+
+```bash
+claude mcp add sequential-thinking -- npx -y @anthropic/mcp-server-sequential-thinking
+```
+
+**Claude Desktop** (add to config):
+
+```json
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-sequential-thinking"]
+    }
+  }
+}
+```
+
+**Docker**:
+
+```bash
+docker run -p 8080:8080 mcp/sequentialthinking
+```
+
+#### When to Use It
+
+| Situation | Sequential Thinking Helps? |
+|-----------|---------------------------|
+| Quick simple tasks | No - overkill |
+| Complex debugging | Yes - systematic investigation |
+| Architecture decisions | Yes - explore trade-offs |
+| Multi-step planning | Yes - revise as you learn |
+| Research tasks | Yes - branch and explore |
 
 ---
 
@@ -307,16 +312,17 @@ Found a bug? Have an improvement? Community resources thrive on contributions.
 Resources can work together:
 
 1. **TÂCHES planning** breaks down your project
-2. **ELF** learns from each session
-3. **Domain skills** provide expertise
-4. **Custom commands** automate your workflows
+2. **GSD** automates full project lifecycle
+3. **Sequential Thinking** for complex reasoning
+4. **Domain skills** provide expertise
+5. **Custom commands** automate your workflows
 
 The combination creates a sophisticated development environment tailored to you.
 
 ## Next Steps
 
 1. Install TÂCHES resources - the planning and debugging skills are immediately useful
-2. Try ELF if session persistence appeals to you
+2. Try Sequential Thinking MCP for complex problem-solving
 3. Search for domain skills matching your tech stack
 4. As you get comfortable, explore building your own
 
