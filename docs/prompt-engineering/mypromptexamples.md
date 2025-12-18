@@ -231,3 +231,89 @@ Additional considerations:
 - **PR-first approach** - Changes are on a branch, reviewable, not directly on main
 - **Scope check** - Catches features that should be multiple PRs
 - **Acceptance criteria** - Defines when to stop
+
+### GitHub Issue Template (Detailed Version)
+
+A comprehensive GitHub Issue template designed for team collaboration. Your business partner fills this out when creating an issue, and Claude has full context when you say "work on issue #742".
+
+**Setup:** Save this as `.github/ISSUE_TEMPLATE/feature-bug.md` in your repository.
+
+```markdown
+---
+name: Feature / Bug Request
+about: Template for new features or bug fixes (optimized for Claude Code)
+title: ''
+labels: ''
+assignees: ''
+---
+
+## Type
+- [ ] Feature
+- [ ] Bug
+
+## Summary
+<!-- One or two sentences describing what needs to be done -->
+
+
+## Detailed Description
+<!-- Full context. What problem does this solve? Why is it needed? -->
+
+
+## Reference Code/Pages
+<!-- Help Claude understand existing patterns to follow -->
+
+- **Similar page to reference:** <!-- URL or file path of existing page that works like this should -->
+- **Database tables involved:** <!-- Table names that will be read from or written to -->
+- **Views/Controllers to look at:** <!-- File paths if known, otherwise leave blank -->
+
+## Database Changes Required
+<!-- Note: LINQ to SQL updates will be handled manually by Eric -->
+
+- **Tables affected:**
+- **New columns needed:**
+- **Column details:** <!-- Data types, nullable, defaults if known -->
+
+## UI/Behavior Description
+<!-- Describe what the user should see and do. If attaching images, also describe them in words here since Claude cannot see images directly -->
+
+
+## Acceptance Criteria
+<!-- How do we know it's done? Simple checklist -->
+
+- [ ] User can...
+- [ ] Data saves to...
+- [ ] Page displays...
+
+## Screenshots/Mockups (optional)
+<!-- Attach images here. Remember to describe what they show in the UI/Behavior section above -->
+
+
+---
+
+## For Claude
+
+**Tech Stack:** .NET MVC + SQL Server (LINQ to SQL)
+
+**Before starting:**
+1. Review the reference page/code mentioned above
+2. Ask clarifying questions if anything is unclear
+3. Check if this should be one PR or multiple smaller ones
+
+**Then:**
+1. Create a feature branch and open a draft PR
+2. Add to todo list for tracking
+3. Start implementation
+
+**Important:**
+- Do NOT modify LINQ to SQL database files - flag any DB schema changes for manual update
+- Follow patterns from the reference code
+- Keep changes focused on what's described in this issue
+```
+
+**Why this works:**
+
+- **Complete context** - Claude gets everything needed without back-and-forth questions
+- **Reference code** - Points to existing patterns to follow
+- **Database awareness** - Captures schema changes while keeping LINQ to SQL manual
+- **Image workaround** - Reminds authors to describe images in words (Claude can't see attached images directly)
+- **Clear handoff** - "For Claude" section sets expectations for the workflow
