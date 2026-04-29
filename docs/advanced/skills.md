@@ -105,6 +105,36 @@ A comprehensive collection including:
 
 GitHub: https://github.com/glittercowboy/taches-cc-resources
 
+#### AGENTS Book Rules
+
+Rule sets distilled from classic software engineering books, ready to drop into Claude Code, Codex, or Cursor. Covers *A Philosophy of Software Design*, *Clean Architecture*, *Clean Code*, *Code Complete*, *Designing Data-Intensive Applications*, *Domain-Driven Design* (three variants), *Patterns of Enterprise Application Architecture*, *Refactoring*, *Release It!*, *The Pragmatic Programmer*, and *Working Effectively with Legacy Code* — 13 books in total.
+
+> ⚠️ **Don't install all 13 at once.** Active skills sit in context, and stacking the full versions of every book will burn through your context window before Claude has read your code. Pick the one or two that match the work you're actually doing. The repo itself acknowledges this — every rule set ships in three sizes:
+>
+> - **`mini`** — recommended for most real task use (~30-40 lines, ~2KB)
+> - **`nano`** — compact fallback for tight context budgets (~30 lines, ~1KB)
+> - **`full`** — canonical complete reference (often 250-1000 lines)
+>
+> Default to `mini`. Reach for `full` only when you're doing focused work where the extra detail earns its keep (e.g. refactoring legacy code with the Feathers book actively pinned).
+
+How to choose between overlapping books:
+
+| If you're doing... | Pick |
+| --- | --- |
+| Everyday coding, code review | *Clean Code* OR *The Pragmatic Programmer* (don't stack both — they overlap) |
+| API / module design, fighting complexity | *A Philosophy of Software Design* |
+| New service architecture, tech-churn resistance | *Clean Architecture* |
+| Refactoring an existing codebase | *Refactoring* |
+| Modernising legacy code without tests | *Working Effectively with Legacy Code* |
+| Distributed systems, data consistency | *Designing Data-Intensive Applications* |
+| Domain modelling for a complex business | *Domain-Driven Design Distilled* (lightest entry point) |
+| Choosing patterns in enterprise apps | *Patterns of Enterprise Application Architecture* |
+| Production reliability, failure modes | *Release It!* |
+
+GitHub: [ciembor/agent-rules-books](https://github.com/ciembor/agent-rules-books) — see `USAGE.md` in the repo for editor-specific (Claude Code / Codex / Cursor) install instructions.
+
+**Pairs well with**: Matt Pocock's *Software Fundamentals Matter More Than Ever* talk (in [videos.md](../videos.md#software-fundamentals-matter-more-than-ever)) — that talk argues these exact books matter more in the AI era; this repo is the operationalised version of that argument.
+
 #### Domain Expertise Skills
 
 Community-built expertise for specific tech stacks:
