@@ -124,6 +124,8 @@ Why this template still matters even though Claude is smarter now:
 
 **Pairs well with**: [Software Fundamentals Matter More Than Ever](#software-fundamentals-matter-more-than-ever) — same speaker, more recent. That talk is the *philosophical* case for why fundamentals (modular design, shared design concepts, ubiquitous language) matter; this one is the *practical* drill on how to actually structure a single prompt. Watch *Software Fundamentals* first, then come here for the hands-on technique.
 
+**Matt's skills repo**: [`mattpocock/skills`](https://github.com/mattpocock/skills) — the prompting discipline shown here is operationalised across his actual `.claude/` skills (`grill-me`, `grill-with-docs`, `write-prd`, etc.). See the [skills doc](advanced/skills.md#matt-pococks-skills-for-real-engineers) for the full breakdown.
+
 ## Advanced Techniques
 
 *For those ready to go deeper*
@@ -160,7 +162,7 @@ Books cited (and worth owning):
 
 **Pairs well with**: [Build an MCP Server in 5 Prompts](#build-an-mcp-server-in-5-prompts) (also Matt Pocock) — that talk shows the prompting discipline; this one shows the architectural discipline that makes the prompting actually pay off.
 
-Skills referenced (`grill-me`, `ubiquitous-language`, `improve-codebase-architecture`, `write-prd`) are in Matt's GitHub: [`mattpocock/skills`](https://github.com/mattpocock/skills) (a.k.a. "Mac PCO skills" in the talk's audio).
+**Matt's skills repo**: [`mattpocock/skills`](https://github.com/mattpocock/skills) — every skill referenced in the talk (`grill-me`, `ubiquitous-language`, `improve-codebase-architecture`, `write-prd`) ships from his actual `.claude/` directory. ~43k stars, install via `npx skills@latest add mattpocock/skills`. The talk is the *why*, the repo is the *what*. See the [skills doc](advanced/skills.md#matt-pococks-skills-for-real-engineers) for the full breakdown including which ones to start with.
 
 ---
 

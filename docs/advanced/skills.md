@@ -95,6 +95,30 @@ cp -r skill-repo/skills/* ~/.claude/skills/
 
 ### Popular Skill Collections
 
+#### Matt Pocock's Skills For Real Engineers
+
+The companion repo to Matt Pocock's *Software Fundamentals Matter More Than Ever* talk (in [videos.md](../videos.md#software-fundamentals-matter-more-than-ever)) — straight from his actual `.claude/` directory. ~43k stars and actively maintained. Built around five failure modes Matt sees over and over with AI coding agents, with the fixes drawn from *The Pragmatic Programmer*, *A Philosophy of Software Design*, and *Domain-Driven Design*.
+
+The headline skills:
+
+- **`/grill-me`** — interviews you relentlessly until you and the agent share a *design concept* for what you're building (Matt's most popular skill — the one he says you should run *every time* before making a change)
+- **`/grill-with-docs`** — same as above but with extra context-gathering for code work
+- **`/ubiquitous-language`** — scans the codebase, surfaces terminology, builds a shared `CONTEXT.md` so the agent stops using 20 words where one will do
+- **`/improve-codebase-architecture`** — refactors toward Ousterhout's *deep modules* pattern (few large modules with simple interfaces)
+- **`/write-prd`** — planning skill that's explicit about module changes and interfaces
+
+One-line install:
+
+```bash
+npx skills@latest add mattpocock/skills
+```
+
+Then run `/setup-matt-pocock-skills` — it prompts for your issue tracker (GitHub/Linear/local files), label conventions, and where to save docs.
+
+GitHub: [mattpocock/skills](https://github.com/mattpocock/skills) — "Skills for Real Engineers. Straight from my .claude directory."
+
+> 💡 **Read the README before bulk-installing.** The repo is opinionated against process-heavy frameworks (GSD, BMAD, Spec-Kit) and aims for small, composable skills. If you're already running a meta-framework, these skills may overlap or conflict with it — pick the individual ones you need rather than installing everything.
+
 #### TÂCHES Claude Code Resources
 
 A comprehensive collection including:
