@@ -174,7 +174,7 @@ Give me a detailed report on the following data. Imagine you are the lead scient
 *Locations:* [Location list] (Locations Total: [total])
 *Indicators:* [Indicators List] (Indicators Total: [total])
 *Time Frame:* [Data time frame]
-*Date Prepared:* [Date]
+*Date Prepared:* [Todays Date]
 
 ### [Abstract]
 
