@@ -15,122 +15,6 @@ These resources represent hundreds of hours of iteration and refinement.
 
 ## Featured Resources
 
-### TÂCHES Claude Code Resources
-
-**What it is**: A comprehensive collection of commands, skills, and agents for Claude Code.
-
-**GitHub**: https://github.com/glittercowboy/taches-cc-resources
-
-**Why it's valuable**: This isn't just a random collection—it's a thoughtfully designed system for professional Claude Code usage. The philosophy: "When you use a tool like Claude Code, it's your responsibility to assume everything is possible."
-
-#### What's Included
-
-**Skills (7)**:
-| Skill | Purpose |
-|-------|---------|
-| `create-plans` | Hierarchical project planning optimized for solo developers |
-| `create-agent-skills` | Build new skills with expert guidance |
-| `create-slash-commands` | Create custom commands |
-| `create-subagents` | Configure specialized agents |
-| `create-hooks` | Set up event automation |
-| `create-meta-prompts` | Build Claude-to-Claude pipelines |
-| `debug-like-expert` | Systematic debugging methodology |
-
-**Commands (27)**:
-- Meta-prompting tools (separate analysis from execution)
-- Todo management (capture ideas without losing focus)
-- Context handoff utilities
-- 12 thinking frameworks (first-principles, Pareto, 5-whys, etc.)
-
-**Agents (3)**:
-- Skill auditor
-- Slash command auditor
-- Subagent auditor
-
-#### Highlights
-
-**create-plans**: This skill alone is worth the install. Instead of Claude diving straight into code, it:
-1. Creates a project brief (vision and goals)
-2. Builds a roadmap (phases and milestones)
-3. Plans each phase in detail
-4. Executes with clear verification criteria
-
-For complex projects, this structure prevents the chaos of unplanned development.
-
-**debug-like-expert**: Activates when troubleshooting and enforces proper debugging:
-- Evidence gathering (not guessing)
-- Hypothesis formation
-- Systematic testing
-- Verification before declaring "fixed"
-
-**Thinking frameworks**: Commands like `/consider:first-principles`, `/consider:pareto`, and `/consider:5-whys` apply structured thinking to problems. Great for decisions and analysis.
-
-#### Installation
-
-Via plugin:
-```bash
-claude plugins install taches-cc-resources
-```
-
-Or manually clone and copy to your skills/commands directories.
-
----
-
-### Get Shit Done (GSD)
-
-**What it is**: A meta-prompting and context engineering system for Claude Code that automates project planning and execution.
-
-**GitHub**: [get-shit-done](https://github.com/glittercowboy/get-shit-done)
-
-**Why it's valuable**: Also from Tash (creator of TÂCHES), GSD addresses the core problem with "vibe coding" - inconsistent results that fall apart at scale. It provides structured context and methodical task breakdown.
-
-#### GSD: The Problem It Solves
-
-> "Vibecoding has a bad reputation. You describe what you want, AI generates code, and you get inconsistent garbage that falls apart at scale."
-
-GSD prevents quality degradation by:
-
-- Breaking work into atomic tasks
-- Running each task in a fresh 200k-token context (no accumulated confusion)
-- Maintaining persistent state tracking across sessions
-
-#### GSD: How It Works
-
-**Workflow Structure**:
-
-1. **Project extraction** - Guided questioning creates PROJECT.md
-2. **Ecosystem research** - Optional deep-dive for complex domains
-3. **Roadmap creation** - Phase-based planning
-4. **Atomic task execution** - Fresh subagent contexts per task
-5. **Modular iteration** - Support for MVPs and feature additions
-
-**Key Features**:
-
-- XML-formatted prompts optimized for Claude
-- Persistent state tracking (STATE.md)
-- Clean Git history with documented summaries
-- Deferred issue management
-- 18+ commands for the complete development lifecycle
-
-#### GSD: Installation
-
-```bash
-npx get-shit-done-cc
-```
-
-#### When to Use GSD vs TÂCHES
-
-| Use Case | Recommendation |
-|----------|----------------|
-| Individual skills/commands | TÂCHES |
-| Full project lifecycle automation | GSD |
-| Learning how skills work | TÂCHES |
-| Shipping complete projects | GSD |
-
-Both are from the same creator and share the same philosophy - they complement each other.
-
----
-
 ### Sequential Thinking MCP Server
 
 **What it is**: An MCP server that enables structured, step-by-step reasoning for complex problems.
@@ -310,15 +194,15 @@ cp -r resource-repo/commands/* ~/.claude/commands/
 You don't have to install everything. Pick what you need:
 
 ```bash
-# Just the planning skill
-cp -r resource-repo/skills/create-plans ~/.claude/skills/
+# Just the skill you want
+cp -r resource-repo/skills/skill-name ~/.claude/skills/
 ```
 
 ## Best Practices
 
 ### Start with One Resource
 
-Don't install everything at once. Start with one tool (like TÂCHES create-plans), use it for a week, then expand.
+Don't install everything at once. Start with one tool, use it for a week, then expand.
 
 ### Read the Documentation
 
@@ -345,19 +229,17 @@ Found a bug? Have an improvement? Community resources thrive on contributions.
 
 Resources can work together:
 
-1. **TÂCHES planning** breaks down your project
-2. **GSD** automates full project lifecycle
-3. **Sequential Thinking** for complex reasoning
-4. **Domain skills** provide expertise
-5. **Custom commands** automate your workflows
+1. **Project planning skills** break down your project
+2. **Sequential Thinking** for complex reasoning
+3. **Domain skills** provide expertise
+4. **Custom commands** automate your workflows
 
 The combination creates a sophisticated development environment tailored to you.
 
 ## Next Steps
 
-1. Install TÂCHES resources - the planning and debugging skills are immediately useful
-2. Try Sequential Thinking MCP for complex problem-solving
-3. Search for domain skills matching your tech stack
-4. As you get comfortable, explore building your own
+1. Try Sequential Thinking MCP for complex problem-solving
+2. Search for domain skills matching your tech stack
+3. As you get comfortable, explore building your own
 
 The community has done incredible work. Take advantage of it.

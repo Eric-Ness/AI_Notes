@@ -11,7 +11,10 @@
       "Bash(gh pr create --title \"feat: Expand Sequential Thinking installation with source and Docker options\" --body \"$(cat <<''EOF''\n## Summary\n\n- Added JSON format installation command for Claude Code (`claude mcp add-json`)\n- Added \"From Source\" section with git clone, npm install, and npm start instructions\n- Documented Streamable HTTP transport details with configurable PORT\n- Updated Docker section with proper build and run commands\n\n## Test plan\n\n- [ ] Verify Claude Code simple installation command works\n- [ ] Verify Claude Code JSON format command works\n- [ ] Test git clone from source repository\n- [ ] Confirm Docker build and run instructions are accurate\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\nEOF\n)\")",
       "Bash(Get-ChildItem -Path \"c:\\Users\\ericn\\Documents\\Github\\AI_Notes\" -Filter \"*CLAUDE*\" -Recurse -ErrorAction SilentlyContinue)",
       "Bash(npm view:*)",
-      "Bash(npm search:*)"
+      "Bash(npm search:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)"
     ]
   }
 }

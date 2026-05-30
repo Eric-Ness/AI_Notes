@@ -124,7 +124,7 @@ Let's work on issue #42 - the authentication feature
 
 ### Planning Artifacts
 
-Tools like TÂCHES create-plans produce artifacts (PLAN.md, SUMMARY.md) that carry context between sessions.
+Planning skills can produce artifacts (PLAN.md, SUMMARY.md) that carry context between sessions.
 
 ### Handoff Format
 

@@ -117,17 +117,7 @@ Then run `/setup-matt-pocock-skills` — it prompts for your issue tracker (GitH
 
 GitHub: [mattpocock/skills](https://github.com/mattpocock/skills) — "Skills for Real Engineers. Straight from my .claude directory."
 
-> 💡 **Read the README before bulk-installing.** The repo is opinionated against process-heavy frameworks (GSD, BMAD, Spec-Kit) and aims for small, composable skills. If you're already running a meta-framework, these skills may overlap or conflict with it — pick the individual ones you need rather than installing everything.
-
-#### TÂCHES Claude Code Resources
-
-A comprehensive collection including:
-- **create-plans**: Hierarchical project planning for solo developers
-- **create-skills**: Build your own skills with guidance
-- **debug-like-expert**: Systematic debugging methodology
-- **create-meta-prompts**: Build Claude-to-Claude pipelines
-
-GitHub: https://github.com/glittercowboy/taches-cc-resources
+> 💡 **Read the README before bulk-installing.** The repo is opinionated against process-heavy frameworks (BMAD, Spec-Kit) and aims for small, composable skills. If you're already running a meta-framework, these skills may overlap or conflict with it — pick the individual ones you need rather than installing everything.
 
 #### AGENTS Book Rules
 
@@ -239,7 +229,7 @@ triggers:
 
 **Why they matter**: Without planning, Claude jumps straight into coding. With a planning skill, Claude first creates a roadmap, identifies dependencies, and sequences work properly.
 
-**Example**: The `create-plans` skill from TÂCHES produces hierarchical plans (Brief → Roadmap → Phase Plans) that Claude can then execute systematically.
+**Example**: A good planning skill produces hierarchical plans (Brief → Roadmap → Phase Plans) that Claude can then execute systematically.
 
 ### Debugging Skills
 
@@ -352,7 +342,7 @@ As you notice patterns:
 
 ### Use Skills to Create Skills
 
-The TÂCHES `create-agent-skills` skill helps you build new skills:
+A skill-creation skill (such as Anthropic's `skill-creator`) helps you build new skills:
 
 ```
 I want to create a skill for our Django project conventions
@@ -386,7 +376,6 @@ If Claude seems confused or inconsistent:
 ## Next Steps
 
 - Browse [Community Resources](community-resources.md) for ready-to-use skills
-- Check the TÂCHES collection for comprehensive planning and debugging tools
 - Start simple: Install one skill, use it for a week, then expand
 
 Skills are the difference between Claude as a generic assistant and Claude as your personalized development partner. Invest time here—it pays dividends on every future session.

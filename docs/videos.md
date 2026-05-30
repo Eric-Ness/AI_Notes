@@ -74,30 +74,6 @@ The seven levels:
 
 **Practical takeaway**: the 200-line ceiling on SKILL.md is the most actionable rule here — it forces progressive disclosure whether you planned for it or not.
 
-### [Claude Code Skills: Create Skills That Create Skills](https://www.youtube.com/watch?v=LJI7FafIDg4)
-
-**Creator**: Tash (TÂCHES) | **Length**: ~25 min
-
-A hands-on tutorial on Claude Code Skills - the feature that lets you package complex workflows into reusable, auto-invoked capabilities. Tash walks through building a skill from scratch using his meta `create-agent-skills` skill (a skill that creates skills).
-
-What makes this valuable:
-
-- **Live demonstration**: Watch a complete skill get built, break, and get fixed in real-time
-- **The heal-skill workflow**: When a skill fails, capture what actually worked and update the skill automatically
-- **XML over Markdown**: Why Tash uses pure XML structure for all skills/commands (Claude parses it better)
-- **Slash command wrappers**: How to guarantee 100% skill invocation (no more "Claude only uses my skill 20% of the time")
-
-Key concepts demonstrated:
-
-- Skills auto-load their frontmatter (name + description) at session start (~50-100 tokens)
-- Reference files only load when Claude actually needs them
-- The ask-user-question workflow for gathering context before building
-- Progressive disclosure: skill → references → API research → implementation
-
-**Philosophy**: "With AI, it's your responsibility to assume that everything is possible. Dream bigger than what everybody else is telling you is possible."
-
-The `create-agent-skills` and `heal-skill` tools shown are available in the [TÂCHES resources](https://github.com/glittercowboy/taches-cc-resources).
-
 ## Prompt Engineering
 
 *Learn how to communicate effectively with AI*
