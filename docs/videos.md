@@ -106,7 +106,34 @@ Why this template still matters even though Claude is smarter now:
 
 *For those ready to go deeper*
 
-<!-- Add videos here -->
+### [Stop Prompting Claude. Use Karpathy's Method Instead.](https://www.youtube.com/watch?v=7zZy1QTvokM)
+
+**Creator**: Austin Marchese | **Length**: ~13 min
+
+A breakdown of how Andrej Karpathy (ex-Tesla AI lead) actually works with AI in 2026, distilled into three stacked layers: **spec → verifier → environment**. The framing rests on one limitation: AI is brilliant at what's *measurable* but blind to *context*. Karpathy's example — "I'm going to a car wash 50m away, should I drive or walk?" — every frontier model says walk, missing that the car has to be *at* the wash. Your job across all three layers is to supply the understanding the model can't derive.
+
+**Layer 1 — The Spec** (deliver your understanding in a format Claude can use):
+
+1. **Uncover the goal, not the task** — "write the end-of-month report" is a task; the *goal* is the decision it drives. Get it out of your head with: *"Interview me to identify the goal of this project."* Karpathy considers plan mode too high-level — work *with* the agent to design a detailed spec.
+2. **Be agile, not waterfall** — tight scope → checkpoint → review → adjust → repeat. People instinctively dump everything at once. Prompt: *"Bias towards smaller, more compartmentalized specs."*
+3. **Be precise, use your brain** — every assumption is a chance to drift. Prompt: *"Make me verify key decisions explicitly to ensure nothing is missed."*
+
+**Layer 2 — The Verifier** (help the AI check its own output):
+
+- Mental model: Karpathy's "animals vs. ghosts," reframed here as a **robot librarian** — it only answers from books it has, *doesn't know when a book is missing*, and so confidently makes things up. Yelling or pleading (treating it like a human) does nothing; the **only real lever is verification**.
+- Three moves: (1) **set evaluation criteria up front, precisely** — "must have three sections, each ending in a recommendation" beats "make it look good"; (2) **use a second model as critic** — e.g. install the Codex plugin inside Claude Code so a different "library" grades the first; (3) **pull external signal** — connect to your deploy system to confirm a deploy actually succeeded, or feed past reports as a format reference.
+- Boris Cherney (creator of Claude Code): a feedback loop will *"2–3× the quality of the final result."*
+
+**Layer 3 — The Environment** (the workshop the spec and verifier live in):
+
+1. **A real `CLAUDE.md`** — auto-injected every prompt; encode rules like *"before building anything multi-step, include a verification plan."* Sections worth having: how the repo works, custom skills + routing, knowledge architecture, key working rules.
+2. **An LLM knowledge base** — Karpathy's viral idea: a folder system that ingests *your own* data so Claude knows where to look. "Your data is your moat."
+3. **A growing skill set** — if you do something repeatedly, make a skill. *"The best way to find a leak in a hose is to run water through it"* — skills improve the more you use them.
+4. **Guardrails, not just guides** — a `CLAUDE.md` "don't edit this folder" line is a *request* Claude can ignore; a **`PreToolUse` hook** enforces it at the tool level so it literally can't. Bucket actions into **always do / ask first / never do**.
+
+**The one thing to focus on** (Karpathy): *"You can outsource your thinking, but you can't outsource your understanding."* All three layers are just structured ways of getting your understanding into the system.
+
+**Pairs well with**: [Every Level of Claude Code Memory Systems](#every-level-of-claude-code-memory-systems) — Karpathy's LLM knowledge base is Level 5 there — and [Software Fundamentals Matter More Than Ever](#software-fundamentals-matter-more-than-ever), whose spec-first `grill-me` discipline shares the "interview me first" instinct of Layer 1.
 
 ## Talks & Presentations
 
@@ -152,4 +179,4 @@ Found a great video? This list is always growing. Videos should be:
 
 ---
 
-*Last updated: April 2026*
+*Last updated: June 2026*
